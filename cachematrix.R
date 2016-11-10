@@ -18,9 +18,12 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function takes the above as input, reset its inverse or 
-## reports error if no inverse exist. You can Use rref() in package 
-## "pracma" to check the rank of matrix.
+## This function takes the returned object as input, reset its 
+## inverse or reports error if no inverse exist. You can Use rref() 
+## in package "pracma" to check the rank of matrix. Notice 'inve' in
+## the object can be binded to abitrary value via 'setIn()', so 
+## I call an argument to clean and force the recalculation if needed.
+
 
 cacheSolve <- function(x, reset=FALSE) {
   if (!is.null(x$getIn()) && !reset) {
