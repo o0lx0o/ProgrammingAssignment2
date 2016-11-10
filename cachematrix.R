@@ -1,9 +1,9 @@
 ## Here creates a set of functions. One take a square matrix as 
 ## input and store its inverse matrix calculated by another  
-## function if the inverse exist.
+## function if the inverse exists.
 ##
 ## This function takes matrix as input and return 4 methods as a 
-## list to read or write the origin matrix and its matrix.
+## list to read or write the origin matrix and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   inve <- NULL
